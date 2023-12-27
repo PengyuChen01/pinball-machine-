@@ -5,13 +5,13 @@
 # You will need to add a entry to create your zip file
 
 #change the last dependency for each new lab
-all:  tags headers lab1
+all:  tags headers %
 
 #this entry has to change for lab 2 - 4
 # NEVER compile .c files with this rule - it lacks needed compile time flags
 # There is an entry below that turns .c files into .o files
 
-lab1: lab1.o 
+%: %.o 
 	gcc -g -o $@ $^ 
 
 #this is where you create an entry to build yuour zip file
@@ -25,8 +25,7 @@ tags: *.c
 
 # this entry stays for C code labs
 headers: *.c tags
-	headers.sh
-
+	./headers.sh
 
 # this entry takes care of C files depending on header files
 # It has the flags for compiling the c code

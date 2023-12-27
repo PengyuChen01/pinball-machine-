@@ -1,14 +1,14 @@
 #! /bin/sh
 
 # this code is by Kyle Rosenberg augmenting code by
-# Neil Kirby
+# Pengyu
 
 
 # name that will be inserted at the top of each header file
 # YOU MUST CHANGE THIS TO YOUR NAME BEFORE USING THIS FILE
 # TURNING IN CODE WITH ANOTHER STUDENTS NAME IN IT IS A COAM OFFENSE
 # - Professor Kirby
-readonly AUTHOR_NAME="I AM GETTING A 0 ON THIS LAB"
+readonly AUTHOR_NAME="Pengyu Chen"
 
 # do the mystery that professor Kirby did for us
 echo "Creating header files..."
